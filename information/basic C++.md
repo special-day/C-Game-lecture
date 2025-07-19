@@ -57,3 +57,34 @@ class의 기능을 한눈에 볼 수 있게 한다.
 initializer는 default value를 주지 않고 바로 초기화한다.
 
 만약 const를 주고 싶다면 initializer로 해야 한다.
+
+# C++ 클래스 소멸자 (destructor)
+
+클래스 객체가 소멸될 때 clean-up 할 내용을 담는다.
+
+# C++ memory
+
+stack memory와 heap memory가 있다.
+
+프로그램이 실행되면 OS는 메모리의 여러 공간에 접근할 수 있도록 한다.
+
+우리가 조작할 수 있는 메모리는 stack과 heap memory이다.
+
+둘 다 RAM에 저장되고, 차이는 OS가 실행 시점에 결정된다.
+
+## Stack / Heap memory
+
+둘 다 요청하면 메모리를 준다.
+
+차이점은 다음과 같다.
+
+사이즈 (heap이 더 크다)
+
+메모리 할당 방법
+
+메모리 할당 속도 (일반적으로 stack이 더 빠르다)
+
+메모리 요청 방법 (문법 차이)
+
+자동 deallocate 여부 (stack은 scope를 빠져나가면 자동으로 해제, heap은 사용자가 해제해 줘야 한다)
+
